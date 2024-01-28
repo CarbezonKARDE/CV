@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Certificates</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4;
+    }
+    h1 {
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+    li {
+      margin: 10px;
+    }
+    #slideshow-container {
+      max-width: 450px;
+      position: relative;
+      margin: auto;
+    }
+    .mySlides {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>Certificates</h2>
+
+  <div id="slideshow-container">
+    <div class="mySlides">
+      <p>Master C++ Programming From Beginner To Advance 2023 Edition</p>
+      <img src="1.jpg" alt="Certificate 1">
+    </div>
+    <div class="mySlides">
+        <p>Ethical Hacking Essentials (EHE)</p>
+      <img src="2.png" alt="Certificate 2">
+    </div>
+    <div class="mySlides">
+      <p>Network Defense Essentials (NDE)</p>
+      <img src="3.png" alt="Certificate 3">
+    </div>
+    <div class="mySlides">
+      <p>Digital Forensics Essentials (DFE)</p>
+      <img src="4.png" alt="Certificate 4">
+    </div>
+    <div class="mySlides">
+      <p>Computer Networks Fundamentals</p>
+      <img src="5.jpg" alt="Certificate 5">
+    </div>
+    <div class="mySlides">
+      <p>Young IoT Prodigy</p>
+      <img src="6.png" alt="Certificate 6">
+    </div>
+    <div class="mySlides">
+      <p>Technical Support Fundamentals</p>
+      <img src="7.png" alt="Certificate 7">
+    </div>
+    <div class="mySlides">
+      <p>Operating Systems and You: Becoming a Power</p>
+      <img src="8.png" alt="Certificate 8">
+    </div>
+    <div class="mySlides">
+      <p>Cryptography I</p>
+      <img src="9.png" alt="Certificate 9">
+    </div>
+
+    <script>
+      let slideIndex = 0;
+
+      function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000);
+      }
+
+      // Start the slideshow
+      showSlides();
+    </script>
+  </div>
+</body>
+</html>
