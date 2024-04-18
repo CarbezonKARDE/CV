@@ -73,33 +73,61 @@
       <img src="9.png" alt="Certificate 9">
     </div>
     <div class="mySlides">
-      <p>Cryptography I</p>
+      <p>Foundation of Cybersecurity</p>
       <img src="10.jpg" alt="Certificate 10">
     </div>
     <div class="mySlides">
-      <p>Cryptography I</p>
+      <p>Play It Safe: Manage security risks</p>
       <img src="11.png" alt="Certificate 11">
     </div>
+    <div class="mySlides">
+      <p>Connect and Protect: Network and Network Security</p>
+      <img src="12.png" alt="Certificate 12">
+    </div>
+    <div class="mySlides">
+      <p>Tool of the trade: linux and sql</p>
+      <img src="13.png" alt="Certificate 13">
+    </div>
+    <div class="mySlides">
+      <p>Assets, Threats and Vulnerabilities</p>
+      <img src="14.png" alt="Certificate 14">
+    </div>
+    <div class="mySlides">
+      <p>Sound the alarm: Detection and Response</p>
+      <img src="15.png" alt="Certificate 15">
+    </div>
+    <div class="mySlides">
+      <p>Automate Cybersecurity Tasks with python</p>
+      <img src="16.png" alt="Certificate 16">
+    </div>
+    <div class="mySlides">
+      <p>Put it to work:Prepare for cybersecurity job</p>
+      <img src="17.png" alt="Certificate 17">
+    </div>
+    <div class="mySlides">
+      <p>Prompt Engineering FOR ChatGPT</p>
+      <img src="18.png" alt="Certificate 18">
 
-    <script>
-      let slideIndex = 0;
+<script>
+  let slideIndex = 1; // Initialize to 1 instead of 0
 
-      function showSlides() {
-        let slides = document.getElementsByClassName("mySlides");
-        for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 4000);
-      }
+  function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 4000);
+  }
 
-      // Start the slideshow
-      showSlides();
-    </script>
+  // Start the slideshow
+  showSlides();
+</script>
+
   </div>
 </body>
 </html>
